@@ -1,0 +1,264 @@
+/*=============== STYLES GÉNERAUX ====================*/
+
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+/*=============== NAV ====================*/
+nav {
+	background-color: #5fb4c9;
+    position: fixed;
+    z-index: 9999;
+    box-shadow: 0px 3px 5px 0px rgba(71,71,71,1);
+}
+
+nav .brand-logo.center {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navEspace {
+    padding: 0em 0.5em;
+}
+
+#navCouleur1:hover {
+    background-color: #b71c1c;
+}
+
+#navCouleur2:hover {
+    background-color: #0277bd;
+}
+
+#navCouleur3:hover{
+    background-color: #00796b;
+}
+
+#navCouleur4:hover {
+    background-color: #2e7d32;
+}
+
+#navCouleur5:hover {
+    background-color: #c0ca33;
+}
+
+.material-icons {
+	display: none;
+}
+
+nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
+    font-size: 45px;
+}
+
+.categorie_langue {
+    background-color: white;
+}
+
+.categorie1 {
+    color: white;
+    background-color: #b71c1c;
+}
+
+.categorie2 {
+    color: white;
+    background-color: #0277bd;
+}
+
+.categorie3 {
+    color: white;
+    background-color: #00796b;
+}
+
+.categorie4 {
+    color: white;
+    background-color: #2e7d32;
+}
+
+.categorie5 {
+    color: white;
+    background-color: #c0ca33;
+}
+
+.sous_categorie {
+    font-size: 20px;
+    background-color: #e0e0e0;
+}
+
+
+#titre{
+    position: absolute;
+    top: 5em;
+    left: 5vw;
+    z-index: 1000;
+}
+
+#logo_img {
+    width: 100%;
+    z-index: 1000;
+    color: white;
+}
+/*=============== DIV ====================*/
+.lesTroisDivDeSections {
+    margin: 3em 0em;
+}
+
+
+.row .col {
+    float: left;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 30px;
+    min-height: 1px;
+    background: white;
+}
+
+/*LES TITRES*/
+h4 {
+    text-align: center;
+    color: #757575;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*LES IMAGES*/
+.logo_image {
+    display: block;
+    width: auto;
+    height: 150px;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+/*LES TEXTES*/
+.texte_logo {
+    text-align: center;
+    margin: 2em 0em;
+}
+
+/*LES BOUTONS*/
+.waves-effect {
+	display: flex;
+	justify-content: center;
+}
+
+.waves-effect:hover {
+    background-color: #5fb4c9;
+}
+
+
+/*COULEUR DES BOUTONS*/
+.btn, .btn-large {
+    margin: 2em 0em;
+    background-color: #616161;
+}
+
+.row {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
+/*=============== SLIDER ====================*/
+.slider .indicators {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    background: #eeeeee;
+    padding-top: 1.5em;
+    padding-bottom: 0.5em;
+}
+
+/* COULEURS DU ROND SLIDER */
+.slider .indicators .indicator-item.active {
+    background-color: #5fb4c9;
+}
+
+/*=============== AUTRES ====================*/
+
+.carte_image {
+    max-width: 100%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1em;
+}
+
+.row .col.l3 {
+    background-color: #b2dfdb;
+}
+
+.collapsible-header:hover {
+    background-color: lightgray;
+}   
+
+/*=============== FOOTER ====================*/
+.page-footer {
+	background-color: #5fb4c9;
+}
+
+.fa {
+    padding: 0em 1em;
+}
+
+
+/*===========================================*/
+/*================= MOBILE ==================*/
+/*===========================================*/
+@media only screen and (max-width: 601px){
+    .carousel {
+        display: none;
+    }
+
+    .row .col.s12 {
+        box-shadow: 0px 5px 7px 3px rgba(150,150,150,1);
+    }
+
+    h4 {
+        margin-top: 1em;
+    }
+
+}
+
+
+/*===========================================*/
+/*============== TABLETTES ==================*/
+/*===========================================*/
+@media only screen and (min-width: 602px) and (max-height: 992px){
+
+    .carousel {
+        max-height: 60em !important;
+    }
+
+    h4 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+}
+
+/*===========================================*/
+/*============== GRAND ÉCRANS ===============*/
+/*===========================================*/
+@media only screen and (min-width: 993px){
+
+    .carousel {
+        max-height: 50em !important;
+    }
+
+    .slider {
+       max-height: 70em !important;
+   }
+
+   h4 {
+    font-size: 30px;
+    font-weight: bold;
+}
+}
+
+
+
